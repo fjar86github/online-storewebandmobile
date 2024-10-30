@@ -41,18 +41,9 @@ Lingkungan pengembangan yang disarankan:
 
 ## Struktur Direktori
 
-```plaintext
-online-store-project/
-├── backend/
-│   ├── db.php
-│   ├── config/
-│   └── index.php
-├── frontend/
-│   ├── public/
-│   └── src/
-├── mobile/
-│   └── src/
-└── docs/
+![image](https://github.com/user-attachments/assets/7d882647-0b13-42f0-9cd4-0c5168bebf6f)
+![image](https://github.com/user-attachments/assets/a7f865d1-419a-4043-b354-071374696e0c)
+
 
 Prasyarat
 Backend: PHP >= 7.4, MySQL
