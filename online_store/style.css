@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef; /* Light gray background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container Styles */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Max width for better responsiveness */
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #343a40; /* Dark gray */
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align label text to the left */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057; /* Medium gray */
+}
+
+/* Input Field Styles */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+/* Input Field Focus Styles */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button Styles */
+.login-button {
+    background-color: #007BFF; /* Bootstrap primary blue */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover Effect */
+.login-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Error Message Styles */
+.error {
+    color: #dc3545; /* Bootstrap danger red */
+    margin-bottom: 20px;
+}
+
+/* Register Link Styles */
+.register-link {
+    margin-top: 15px;
+    color: #495057; /* Medium gray */
+}
+
+.register-link a {
+    color: #007BFF; /* Blue link */
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
