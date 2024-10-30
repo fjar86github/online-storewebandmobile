@@ -88,6 +88,22 @@ c. Impor dan Ekspor Data
 d. Layanan Restfull API untuk mengakses produk, login, user manajemen, impor dan ekspor data
 ##Demo Project Mobile Apps
 1. Halaman Login Aplikasi
-   
-3. Menu Utama Aplikasi
-4. Fitur Pada Aplikasi Mobile
+   ![image](https://github.com/user-attachments/assets/ec824445-2c64-46c6-9f21-a6c427fb554b)
+
+2. Menu Utama Aplikasi
+   ![image](https://github.com/user-attachments/assets/05e7e1af-f059-45dc-b5b3-82a14dcc237e)
+
+3. Fitur Pada Aplikasi Mobile
+   ![image](https://github.com/user-attachments/assets/17792bb2-8791-42d3-93c8-5858943547d7)
+   ![image](https://github.com/user-attachments/assets/0cfd082b-0d3b-4e30-ba7b-d628076f2a3e)
+   ![image](https://github.com/user-attachments/assets/b8f860d1-3be3-436c-97a9-d9e50009bc38)
+   ![image](https://github.com/user-attachments/assets/f3413326-50b8-4e2d-919f-09139caf83b2)
+   ![image](https://github.com/user-attachments/assets/d45ff5d7-d7a0-44c9-9690-e57ab78102c1)
+   ![image](https://github.com/user-attachments/assets/24c87392-0503-4af8-bf05-69d52b8e5123)
+![image](https://github.com/user-attachments/assets/39efaa21-6de8-41a5-a66d-e7eb9ef17958)
+
+
+
+
+
+
