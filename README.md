@@ -1,157 +1,127 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Store Project Documentation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        h1 {
-            text-align: center;
-            font-size: 2em;
-            color: #444;
-        }
-        h2 {
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
-            margin-top: 30px;
-            font-size: 1.5em;
-            color: #444;
-        }
-        ul, ol {
-            margin-left: 20px;
-        }
-        code {
-            background-color: #e9ecef;
-            padding: 3px 5px;
-            border-radius: 3px;
-            font-size: 0.95em;
-        }
-        pre {
-            background-color: #f5f5f5;
-            padding: 15px;
-            border-radius: 5px;
-            overflow: auto;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-        }
-        .code-block {
-            background-color: #282c34;
-            color: #61dafb;
-            padding: 15px;
-            border-radius: 5px;
-            overflow: auto;
-            font-family: monospace;
-            line-height: 1.6;
-        }
-    </style>
-</head>
-<body>
+Online Store Project
+Online Store Project adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki back-end berbasis PHP dan MySQL, front-end berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile.
 
-<div class="content">
-    <h1>Online Store Project</h1>
-    <p><strong>Online Store Project</strong> adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki back-end berbasis PHP dan MySQL, front-end berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile.</p>
+Daftar Isi
+Deskripsi Proyek
+Lingkungan Pengembangan
+Spesifikasi Teknis
+Struktur Direktori
+Prasyarat
+Instalasi dan Pengaturan
+API Endpoint
+Penggunaan
+Kontribusi
+Lisensi
+Deskripsi Proyek
+Proyek ini terdiri dari beberapa bagian:
 
-    <h2>Daftar Isi</h2>
-    <ol>
-        <li><a href="#deskripsi">Deskripsi Proyek</a></li>
-        <li><a href="#lingkungan">Lingkungan Pengembangan</a></li>
-        <li><a href="#spesifikasi">Spesifikasi Teknis</a></li>
-        <li><a href="#struktur">Struktur Direktori</a></li>
-        <li><a href="#prasyarat">Prasyarat</a></li>
-        <li><a href="#instalasi">Instalasi dan Pengaturan</a></li>
-        <li><a href="#api">API Endpoint</a></li>
-        <li><a href="#penggunaan">Penggunaan</a></li>
-        <li><a href="#kontribusi">Kontribusi</a></li>
-        <li><a href="#lisensi">Lisensi</a></li>
-    </ol>
+Backend: RESTful API menggunakan PHP dan MySQL untuk memproses data pengguna, produk, dan transaksi pesanan.
+Frontend Web: Aplikasi web menggunakan React untuk interaksi pengguna dengan katalog produk dan melakukan pembelian.
+Mobile App: Aplikasi mobile berbasis Ionic untuk pengguna yang ingin mengakses toko dari perangkat seluler.
+Lingkungan Pengembangan
+Berikut adalah deskripsi lingkungan pengembangan yang disarankan untuk menjalankan proyek ini dengan lancar:
 
-    <h2 id="deskripsi">Deskripsi Proyek</h2>
-    <p>Proyek ini terdiri dari beberapa bagian:</p>
-    <ul>
-        <li><strong>Backend</strong>: RESTful API menggunakan PHP dan MySQL untuk memproses data pengguna, produk, dan transaksi pesanan.</li>
-        <li><strong>Frontend Web</strong>: Aplikasi web menggunakan React untuk interaksi pengguna dengan katalog produk dan melakukan pembelian.</li>
-        <li><strong>Mobile App</strong>: Aplikasi mobile berbasis Ionic untuk pengguna yang ingin mengakses toko dari perangkat seluler.</li>
-    </ul>
-
-    <h2 id="lingkungan">Lingkungan Pengembangan</h2>
-    <p>Berikut adalah deskripsi lingkungan pengembangan yang disarankan:</p>
-    <ul>
-        <li><strong>Sistem Operasi</strong>: Windows 10 / macOS / Linux</li>
-        <li><strong>Server Development</strong>: XAMPP atau WAMP untuk PHP dan MySQL</li>
-        <li><strong>Node.js</strong>: Versi 14.x atau lebih baru</li>
-        <li><strong>Ionic CLI</strong>: Versi 6.x atau lebih baru</li>
-    </ul>
-
-    <h2 id="spesifikasi">Spesifikasi Teknis</h2>
-    <ol>
-        <li><strong>Backend</strong>: Server-side API dibangun menggunakan PHP dengan koneksi MySQL, mendukung operasi CRUD.</li>
-        <li><strong>Database</strong>:
-            <ul>
-                <li><code>users</code>: Mengelola data pengguna</li>
-                <li><code>products</code>: Mengelola data produk</li>
-                <li><code>orders</code>: Mengelola pesanan pengguna</li>
-            </ul>
-        </li>
-        <li><strong>Frontend Web</strong>: React digunakan untuk antarmuka pengguna web.</li>
-        <li><strong>Mobile App</strong>: Ionic untuk UI responsif, dengan Angular sebagai basis aplikasi.</li>
-    </ol>
-
-    <h2 id="struktur">Struktur Direktori</h2>
-    <pre class="code-block">
+Software
+Sistem Operasi: Windows 10 / macOS / Linux
+Server Development: XAMPP atau WAMP untuk PHP dan MySQL, atau server setara lainnya
+Node.js: Versi 14.x atau lebih baru untuk menjalankan aplikasi front-end dan mobile
+Ionic CLI: Versi 6.x atau lebih baru untuk aplikasi mobile
+Tools
+Database Management: phpMyAdmin untuk pengelolaan database
+Code Editor: Visual Studio Code atau editor teks serupa
+Browser: Chrome, Firefox, atau Edge (dengan mode developer)
+Postman: Untuk pengujian API
+Frameworks & Libraries
+Backend: PHP 7.x, MySQL
+Frontend Web: React.js dengan Axios untuk API dan React Router untuk navigasi
+Mobile App: Ionic Framework dengan Angular
+Spesifikasi Teknis
+Backend: Server-side API dibangun menggunakan PHP dengan koneksi MySQL, mendukung operasi CRUD pada tabel produk, pesanan, dan pengguna.
+Database:
+Tabel users: Mengelola data pengguna (ID, username, password, email).
+Tabel products: Mengelola data produk (ID, nama, deskripsi, harga, stok, gambar).
+Tabel orders: Mengelola pesanan pengguna, mengaitkan pengguna dengan produk yang dipesan.
+Frontend Web: Menggunakan React untuk antarmuka pengguna web. Komponen seperti ProductList, Cart, dan OrderSummary mengatur alur transaksi pengguna.
+Mobile App: Ionic untuk UI responsif, dengan Angular sebagai basis aplikasi.
+Struktur Direktori
+bash
+Copy code
 online-store-project/
-├── backend/
-│   ├── db.php
-│   ├── config/
-│   └── index.php
-├── frontend/
-│   ├── public/
-│   └── src/
-├── mobile/
-│   └── src/
-└── docs/
-    </pre>
-
-    <h2 id="prasyarat">Prasyarat</h2>
-    <ul>
-        <li><strong>Backend</strong>: PHP >= 7.4, MySQL</li>
-        <li><strong>Frontend</strong>: Node.js (v14 atau lebih baru)</li>
-        <li><strong>Mobile App</strong>: Ionic CLI</li>
-    </ul>
-
-    <h2 id="instalasi">Instalasi dan Pengaturan</h2>
-    <p>Clone repository dan install dependensi berikut untuk memulai proyek:</p>
-    <pre class="code-block">
+├── backend/                        # Aplikasi server-side
+│   ├── db.php                      # Koneksi database
+│   ├── config/                     # Konfigurasi aplikasi
+│   ├── controllers/                # Logika bisnis untuk CRUD
+│   ├── models/                     # Struktur data
+│   ├── routes/                     # Routing endpoint API
+│   └── index.php                   # Entry point backend
+│
+├── frontend/                       # Aplikasi front-end (web)
+│   ├── public/                     # Aset publik
+│   ├── src/                        # Kode sumber front-end
+│   ├── .env                        # Variabel lingkungan untuk API URL
+│   └── package.json                # Konfigurasi proyek front-end
+│
+├── mobile/                         # Aplikasi mobile (Ionic)
+│   ├── src/                        # Kode sumber aplikasi mobile
+│   ├── assets/                     # Aset aplikasi mobile
+│   ├── capacitor.config.json       # Konfigurasi Capacitor untuk platform mobile
+│   └── package.json                # Konfigurasi proyek Ionic
+│
+└── docs/                           # Dokumentasi proyek
+    ├── API.md                      # Dokumentasi API
+    ├── database-schema.png         # Diagram skema database
+    └── user-guide.md               # Panduan pengguna aplikasi
+Prasyarat
+Backend: PHP >= 7.4, MySQL (disarankan menggunakan XAMPP atau WAMP).
+Frontend: Node.js (v14 atau lebih baru), npm.
+Mobile App: Ionic CLI, Android Studio (untuk Android) atau Xcode (untuk iOS).
+Instalasi dan Pengaturan
+1. Clone Repository
+bash
+Copy code
 git clone https://github.com/username/online-store-project.git
 cd online-store-project
-    </pre>
+2. Setup Database
+Buat database MySQL bernama online_store_db.
+Impor skema dari docs/database-schema.sql.
+3. Konfigurasi Backend
+Masuk ke folder backend.
+Buat file .env dengan konfigurasi berikut:
+dotenv
+Copy code
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=password
+DB_NAME=online_store_db
+Jalankan server menggunakan XAMPP/WAMP.
+4. Frontend Setup (Web)
+Masuk ke folder frontend.
+Install dependensi:
+bash
+Copy code
+npm install
+Jalankan aplikasi web:
+bash
+Copy code
+npm start
+5. Mobile Setup (Ionic)
+Masuk ke folder mobile.
+Install dependensi:
+bash
+Copy code
+npm install
+Jalankan aplikasi di emulator atau perangkat nyata:
+bash
+Copy code
+ionic serve
+API Endpoint
+Lihat docs/API.md untuk dokumentasi lengkap endpoint API, termasuk metode HTTP yang didukung, request, dan response yang diharapkan.
 
-    <h2 id="api">API Endpoint</h2>
-    <p>Lihat <code>docs/API.md</code> untuk dokumentasi lengkap endpoint API.</p>
+Penggunaan
+Frontend Web: Akses melalui http://localhost:3000 untuk melihat antarmuka toko online di browser.
+Mobile App: Akses aplikasi Ionic melalui perangkat mobile atau emulator.
+Kontribusi
+Kontribusi terbuka untuk pengembangan fitur baru, perbaikan bug, atau peningkatan dokumentasi. Silakan buat Pull Request setelah fork repository.
 
-    <h2 id="penggunaan">Penggunaan</h2>
-    <ul>
-        <li><strong>Frontend Web</strong>: Akses melalui <code>http://localhost:3000</code></li>
-        <li><strong>Mobile App</strong>: Akses aplikasi Ionic melalui perangkat mobile atau emulator.</li>
-    </ul>
-
-    <h2 id="kontribusi">Kontribusi</h2>
-    <p>Kontribusi terbuka untuk pengembangan fitur baru, perbaikan bug, atau peningkatan dokumentasi.</p>
-
-    <h2 id="lisensi">Lisensi</h2>
-    <p>Proyek ini dilisensikan di bawah <a href="LICENSE">MIT License</a>.</p>
-</div>
-
-</body>
-</html>
+Lisensi
+Proyek ini dilisensikan di bawah MIT License.
