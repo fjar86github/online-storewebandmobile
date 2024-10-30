@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #loginForm="ngForm" (ngSubmit)="login()">
+    <ion-item>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input
+        type="text"
+        [(ngModel)]="credentials.username"
+        name="username"
+        required
+        #username="ngModel">
+      </ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="username.invalid && username.touched">
+      <p>Username is required.</p>
+    </ion-text>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input
+        type="password"
+        [(ngModel)]="credentials.password"
+        name="password"
+        required
+        minlength="5"
+        #password="ngModel">
+      </ion-input>
+    </ion-item>
+    <ion-text color="danger" *ngIf="password.invalid && password.touched">
+      <p *ngIf="password.errors?.['required']">Password is required.</p>
+      <p *ngIf="password.errors?.['minlength']">Password must be at least 5 characters.</p>
+    </ion-text>
+
+    <ion-button expand="full" type="submit" [disabled]="loginForm.invalid">Login</ion-button>
+  </form>
+
+  <!-- Link to the Registration Page -->
+  <div class="register-link" style="text-align: center; margin-top: 20px;">
+    <p>Don't have an account? <a (click)="goToRegister()">Register here</a></p>
+  </div>
+
+  <!-- Link to the Forgot Password Page -->
+  <div class="register-link" style="text-align: center; margin-top: 10px;">
+    <p>Forgot Password? <a (click)="gotoForgotPassword()">Forgot Password here</a></p>
+  </div>
+</ion-content>

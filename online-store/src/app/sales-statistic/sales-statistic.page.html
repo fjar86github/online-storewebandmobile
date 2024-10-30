@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sales Statistics</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-spinner *ngIf="!sales.length"></ion-spinner> <!-- Show spinner while loading -->
+
+  <ion-card *ngIf="sales.length > 0">
+    <ion-card-header>
+      <ion-card-title>Sales Statistics</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let sale of sales">
+          <ion-label>
+            <h2>{{ sale.product_name }}</h2>
+            <p>Total Quantity Sold: {{ sale.total_quantity_sold }}</p>
+            <p>Total Sales: ${{ sale.total_sales.toFixed(2) }}</p>
+            <p>Total Orders: {{ sale.total_orders }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-alert
+    *ngIf="sales.length === 0"
+    header="No Data"
+    message="No sales statistics available at this moment."
+    [buttons]="['OK']">
+  </ion-alert>
+
+  <ion-alert
+    *ngIf="errorMessage"
+    header="Error"
+    [message]="errorMessage"
+    [buttons]="['OK']">
+  </ion-alert>
+</ion-content>

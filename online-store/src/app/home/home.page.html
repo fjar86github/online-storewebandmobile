@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-button expand="full" routerLink="/product-list">Product List</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" routerLink="/product-search">Product Search</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" routerLink="/order">Order</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" routerLink="/import">Import</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" routerLink="/export">Export</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" routerLink="/sales-statistic">Sales Statistic</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button expand="full" (click)="logout()">Logout</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>

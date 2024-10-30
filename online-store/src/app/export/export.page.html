@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Export Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="export-container">
+    <h2>Export Data as CSV</h2>
+    <p>Click the button below to download your data in CSV format.</p>
+
+    <ion-button color="success" expand="block" (click)="openLoginModal()">
+      <ion-icon slot="start" name="download-outline"></ion-icon>
+      Download CSV
+    </ion-button>
+
+    <ion-modal [isOpen]="isLoginModalOpen" (didDismiss)="isLoginModalOpen = false">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Login</ion-title>
+            <ion-buttons slot="end">
+              <ion-button (click)="isLoginModalOpen = false">Close</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="ion-padding">
+          <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <ion-item>
+              <ion-label position="floating">Username</ion-label>
+              <ion-input type="text" [(ngModel)]="credentials.username" name="username" required
+                #username="ngModel"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Password</ion-label>
+              <ion-input type="password" [(ngModel)]="credentials.password" name="password" required minlength="5"
+                #password="ngModel"></ion-input>
+            </ion-item>
+            <ion-button expand="full" type="submit">Login</ion-button>
+          </form>
+          <div *ngIf="loginError" class="error-message">{{ loginError }}</div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </div>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Import Data</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <input type="file" (change)="onFileChange($event)" accept=".csv" />
+  </ion-item>
+
+  <div *ngIf="message" style="margin-top: 10px;">
+    <p>{{ message }}</p>
+  </div>
+</ion-content>

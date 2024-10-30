@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ isEditing ? 'Edit Product' : 'Add Product' }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="saveProduct()">Save</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="isEditing">
+    <h2>Edit Product ID: {{ productData.id }}</h2>
+  </div>
+
+  <ion-item>
+    <ion-label position="floating">Product Name</ion-label>
+    <ion-input [(ngModel)]="productData.name" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Price</ion-label>
+    <ion-input [(ngModel)]="productData.price" type="number" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-textarea [(ngModel)]="productData.description"></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Stock</ion-label>
+    <ion-input [(ngModel)]="productData.stock" type="number" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Image URL</ion-label>
+    <ion-input [(ngModel)]="productData.image" type="url"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="saveProduct()">
+    {{ isEditing ? 'Update Product' : 'Add Product' }}
+  </ion-button>
+</ion-content>

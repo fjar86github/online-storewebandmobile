@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Place an Order</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let product of products">
+      <ion-thumbnail slot="start">
+        <img [src]="product.image || 'assets/imgs/placeholder.png'" alt="{{ product.name }}">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ product.name }}</h2>
+        <p>Price: ${{ product.price | number: '1.2-2' }}</p>
+        <p>Stock: {{ product.stock }}</p>
+      </ion-label>
+      <ion-input type="number" [(ngModel)]="quantities[product.id]" min="1" [max]="product.stock"></ion-input>
+      <ion-button (click)="placeOrder(product.id)">Place Order</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <div *ngIf="message" style="margin-top: 10px;">
+    <p>{{ message }}</p>
+  </div>
+</ion-content>
