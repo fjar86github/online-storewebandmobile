@@ -1,6 +1,6 @@
 # Online Store Project
 
-Proyek **Online Store Project** adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki backend berbasis PHP dan MySQL, frontend berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile. Untuk dapat menggunakan silahkan Anda dapat menghubungi saya di 085524823045
+Proyek **Online Store Project** adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki backend berbasis PHP dan MySQL, frontend berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile. Untuk dapat menggunakan silahkan Anda dapat menghubungi saya di 085524823045. folder online_store adalah proyek web, online-store proyek ionic 7.
 
 ## Daftar Isi
 1. [Deskripsi Proyek](#deskripsi-proyek)
