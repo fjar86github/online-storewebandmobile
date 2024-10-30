@@ -1,6 +1,6 @@
 # Online Store Project
 
-Proyek **Online Store Project** adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki backend berbasis PHP dan MySQL, frontend berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile.
+Proyek **Online Store Project** adalah aplikasi toko online yang memungkinkan pengguna membeli produk dari web atau aplikasi mobile berbasis Ionic. Proyek ini memiliki backend berbasis PHP dan MySQL, frontend berbasis React untuk aplikasi web, dan Ionic untuk aplikasi mobile. Untuk dapat menggunakan silahkan Anda dapat menghubungi saya di 085524823045
 
 ## Daftar Isi
 1. [Deskripsi Proyek](#deskripsi-proyek)
@@ -52,13 +52,6 @@ Mobile App: Ionic CLI
 Instalasi dan Pengaturan
 Clone repository dan install dependensi berikut untuk memulai proyek:
 
-bash
-Copy code
-git clone https://github.com/username/online-store-project.git
-cd online-store-project
-API Endpoint
-Dokumentasi lengkap endpoint API dapat ditemukan di docs/API.md.
-
 Penggunaan
 Frontend Web: Akses melalui http://localhost:3000
 Mobile App: Akses aplikasi Ionic melalui perangkat mobile atau emulator.
@@ -73,3 +66,28 @@ Proyek ini dilisensikan di bawah MIT License.
 2. Push file `README.md` ke repository GitHub Anda.
 
 Struktur ini akan terlihat rapi di GitHub, dengan daftar isi yang memiliki tautan langsung ke bagian terkait, dan penggunaan elemen Markdown yang tepat agar mudah dibaca.
+
+##Demo Project Web
+1. Halaman Utama Sebelum Login
+   ![image](https://github.com/user-attachments/assets/e6e4c2b6-e97c-48ed-ae07-27166d6a15cb)
+![image](https://github.com/user-attachments/assets/d395aca1-3167-4bde-b9e1-65f005481ebe)
+![image](https://github.com/user-attachments/assets/a9064718-79dc-4326-9050-0c96ca77e119)
+
+3. Halaman Utama Setelah Login
+   ![image](https://github.com/user-attachments/assets/a7c277b8-6d2e-4477-be0f-7c51e9398d78)
+![image](https://github.com/user-attachments/assets/42361ff3-8bc4-42bf-801d-9eab216ff3f4)
+![image](https://github.com/user-attachments/assets/d2244446-d315-4610-b6f5-24aeceb25cfa)
+![image](https://github.com/user-attachments/assets/716c46dd-5d4e-40b6-b117-e79cea19acc1)
+![image](https://github.com/user-attachments/assets/d6b4839b-6312-4a07-8cf4-c9880a6691ac)
+![image](https://github.com/user-attachments/assets/d610615f-1a93-4726-abda-d0afce91f566)
+
+5. Fitur Pada Aplikasi Web
+a. Manajemen Produk / CRUD termasuk Pencarian
+b. Manajemen User/registrasi
+c. Impor dan Ekspor Data
+d. Layanan Restfull API untuk mengakses produk, login, user manajemen, impor dan ekspor data
+##Demo Project Mobile Apps
+1. Halaman Login Aplikasi
+   
+3. Menu Utama Aplikasi
+4. Fitur Pada Aplikasi Mobile
